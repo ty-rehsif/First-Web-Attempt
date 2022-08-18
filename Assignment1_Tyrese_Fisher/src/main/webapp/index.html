@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marvel Recruiter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Marvel Recruiter</h1>
+        <!-- must enter his/her full name and a valid email in order to proceed-->
+        <!-- clicking “Continue” button, if any of them is missing, or the email is invalid, a message is shown-->
+        <!-- the user clicks the Continue button to proceed to the next page-->
+        <!-- if the full name is “Thanos”, the application will not proceed-->
+        
+    <!-- start the form with post-->
+        <form action="infocollector" method="POST">
+        <!-- entering the first, last and email-->
+            <p>Enter your contact information</p>
+            <p><label>Full Name: <input type="text" name="fullname" value="" required/></label></p>
+            <p><label>E-mail: <input type="email" name="email" value="" /></label></p>
+        <!-- creating the continue button-->
+        <!-- we create server side validation for empty entry -->
+            <input type="submit" value="Continue" /><br><br> 
+        </form>
+           
+    </body>
+</html>
